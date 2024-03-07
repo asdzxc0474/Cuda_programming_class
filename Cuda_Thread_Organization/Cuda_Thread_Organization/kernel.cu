@@ -18,7 +18,7 @@ __global__ void helloWorld()
 int main()
 {
 	const dim3 block_size(1, 2, 3);
-	const dim3 grid_size(2, 4, 2);
+	const dim3 grid_size(1,2);
 	helloWorld << <grid_size, block_size >> > ();
 	cudaDeviceSynchronize();
 }
